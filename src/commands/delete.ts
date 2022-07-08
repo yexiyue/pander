@@ -1,19 +1,24 @@
 import template from '../template.json' assert {type:'json'};
-import { write ,Options,ques,getDirname} from '../utils/util.js';
+import { write ,Options,ques,getDirname,Reset} from '../utils/util.js';
 import { resolve } from "path";
 import chalk from 'chalk';
 import logSymbols from 'log-symbols';
 const tmpUrl=resolve(getDirname(import.meta.url),'../template.json')
 
 const choices=Object.keys(template)
+
 const opts:Options={
   name:'templates',
   type:'checkbox',
   message:'choice the templates that which you want to delete',
   choices,
 }
-type Reset<T extends Record<string,string>>=(keyof T)[]
+
 export async function del(){
+  if(choices.length==0){
+    console.log(chalk.yellowBright(logSymbols.info,'the templates has been empty!'))
+    process.exit()
+  }
   const res:{
     templates:string[]
   }=await ques(opts) as any

@@ -22,6 +22,10 @@ const opts = {
 };
 export function del() {
     return __awaiter(this, void 0, void 0, function* () {
+        if (choices.length == 0) {
+            console.log(chalk.yellowBright(logSymbols.info, 'the templates has been empty!'));
+            process.exit();
+        }
         const res = yield ques(opts);
         //获得剩下的
         const surplus = choices.filter(x => {
@@ -34,7 +38,7 @@ export function del() {
         }
         //重写回文件
         write(tmpUrl, data);
-        console.log(chalk.greenBright(logSymbols.success + ' delete successfully'));
+        console.log(chalk.greenBright(logSymbols.success + ' delete successfully\n'));
         console.log(chalk.greenBright(logSymbols.info + " use 'tmcli list' to show list"));
     });
 }

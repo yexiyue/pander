@@ -3,6 +3,7 @@ import fs from 'fs'
 import Table from 'cli-table'
 import {dirname} from 'path'
 import {fileURLToPath} from 'url'
+export type Reset<T extends Record<string,string>>=(keyof T)[]
 //处理字符串两边空格
 export function trim(str:string){
   return str.trim()
