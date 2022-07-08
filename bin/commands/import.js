@@ -24,7 +24,7 @@ export function importFile() {
             const data = JSON.parse(inFile);
             write(tmpUrl, Object.assign(Object.assign({}, template), data));
             console.log(chalk.greenBright('\n', logSymbols.success + ' export template.json successfully!\n'));
-            console.log(chalk.greenBright("use 'tmcli list' to watch templates"));
+            console.log(chalk.greenBright("use 'pander list' to watch templates"));
         }
         catch (error) {
             console.log(chalk.red(logSymbols.error, ` ${error}`));

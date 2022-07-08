@@ -10,6 +10,6 @@ export function list() {
     }
     else {
         console.log(chalk.yellowBright(logSymbols.info), chalk.yellowBright('the templates is empty.\n'));
-        console.log(chalk.yellowBright("please use 'tmcli add' to add templates"));
+        console.log(chalk.yellowBright("please use 'pander add' to add templates"));
     }
 }
