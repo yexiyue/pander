@@ -3,6 +3,7 @@ import {Command} from 'commander'
 import {clear} from './commands/clear.js'
 import {add} from './commands/add.js'
 import { list } from './commands/list.js'
+import { del } from './commands/delete.js'
 const program=new Command()
 program.usage('<command>')
 
@@ -29,6 +30,12 @@ program.command('clear')
   .description('delete all of the template')
   .action(()=>{
     clear()
+  })
+
+program.command('delete')
+  .description('delete template')
+  .action(()=>{
+    del()
   })
 //这个必须放最后
 program.parse(process.argv)

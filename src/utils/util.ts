@@ -14,9 +14,7 @@ export async function ques(opts:Options){
   return answer
 }
 //写入文件
-export type TmpData={
-  [key:PropertyKey]:string
-}
+export type TmpData=Record<string,string>
 export function write(url:string,data:TmpData){
   const str=JSON.stringify(data,null,'\t')
   fs.writeFileSync(url,str,'utf-8')
