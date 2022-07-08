@@ -1,17 +1,16 @@
 {
-  "name": "tmcli",
-  "version": "1.0.0",
-  "description": "CLI version of todo list",
+  "name": "pander",
+  "version": "1.0.1",
+  "description": "A template management tool that supports import and export",
   "main": "index.js",
   "bin": "bin/index.js",
   "scripts": {
-    "test": "jest",
     "build": "tsc",
     "dev": "tsc --watch",
-    "teg": "pnpm build && pnpm remove tmcli -g && pnpm link --global"
+    "teg": "pnpm build && pnpm remove pander -g && pnpm link --global"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node","cli","template"],
+  "author": "yexiyue666",
   "license": "ISC",
   "dependencies": {
     "chalk": "5.0.1",

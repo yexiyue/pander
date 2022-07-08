@@ -34,5 +34,5 @@ export async function del(){
   //重写回文件
   write(tmpUrl,data)
   console.log(chalk.greenBright(logSymbols.success+' delete successfully\n'))
-  console.log(chalk.greenBright(logSymbols.info+" use 'tmcli list' to show list" ))
+  console.log(chalk.greenBright(logSymbols.info+" use 'pander list' to show list" ))
 }

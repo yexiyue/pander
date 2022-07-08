@@ -1,4 +1,4 @@
-# tmcli
+# pander
 
 
 
@@ -15,11 +15,11 @@
 ### Installation
 
 ```
-npm i tmcli -g
+npm i pander -g
 ```
 
 ```
-pnpm i tmcli -g
+pnpm i pander -g
 ```
 
 
@@ -29,7 +29,7 @@ pnpm i tmcli -g
 add template
 
 ```
-tmcli add
+pander add
 ```
 
 ![image-20220708211537874](https://s2.loli.net/2022/07/08/oD5j8ywafzdW7xe.png)
@@ -41,7 +41,7 @@ tmcli add
 list all of templates
 
 ```
-tmcli list
+pander list
 ```
 
 ![image-20220708211632409](https://s2.loli.net/2022/07/08/MWAozKkOSf9LJi2.png)
@@ -53,7 +53,7 @@ tmcli list
 create project by template
 
 ```
-tmcli create
+pander create
 ```
 
 ![image-20220708211821210](https://s2.loli.net/2022/07/08/BcOzqWpXJxk5hVD.png)
@@ -65,7 +65,7 @@ tmcli create
 delete template
 
 ```
-tmcli delete
+pander delete
 ```
 
 ![image-20220708211922394](https://s2.loli.net/2022/07/08/a2tg7ApjRZbmW4F.png)
@@ -77,7 +77,7 @@ tmcli delete
 delete all of the templates
 
 ```
-tmcli clear
+pander clear
 ```
 
 ![image-20220708212021629](https://s2.loli.net/2022/07/08/miTh9z1bkFpLAH8.png)
@@ -89,7 +89,7 @@ tmcli clear
 export you templates into a template.json file in current working directory
 
 ```
-tmcli export
+pander export
 ```
 
 ![image-20220708212252082](https://s2.loli.net/2022/07/08/KNl98krBzgiH2Y4.png)
@@ -103,7 +103,7 @@ tmcli export
 create template.json in current working directory
 
 ```
-tmcli import
+pander import
 ```
 
 ![image-20220708213053470](https://s2.loli.net/2022/07/08/HFMsQKmRw3BALpW.png)

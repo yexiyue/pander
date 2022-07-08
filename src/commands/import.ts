@@ -17,7 +17,7 @@ export async function importFile(){
       ...data
     })
     console.log(chalk.greenBright('\n',logSymbols.success + ' export template.json successfully!\n'))
-    console.log(chalk.greenBright("use 'tmcli list' to watch templates"))
+    console.log(chalk.greenBright("use 'pander list' to watch templates"))
   } catch (error) {
     console.log(chalk.red(logSymbols.error,` ${error}`))
     console.log(chalk.red('当前目录下并没有template.json文件'))
