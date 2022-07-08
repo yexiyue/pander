@@ -25,7 +25,7 @@ export function clear() {
             console.log(chalk.greenBright(logSymbols.success + ' delete successfully'));
         }
         else {
-            console.log(chalk.greenBright(logSymbols.info + 'cancel clear true'));
+            console.log(chalk.yellowBright(logSymbols.info + 'cancel clear true'));
         }
     });
 }

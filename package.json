@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "CLI version of todo list",
   "main": "index.js",
-  "bin": "bin/src/index.js",
+  "bin": "bin/index.js",
   "scripts": {
     "test": "jest",
     "build": "tsc",
