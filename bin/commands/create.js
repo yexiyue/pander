@@ -46,7 +46,7 @@ export function create() {
             spinner.succeed();
             console.log(chalk.greenBright(logSymbols.success + ' Create completed!'));
             console.log(`\n cd ${res.dirname}`);
-            console.log('\n pnpm i or npm i or yarn i');
+            console.log('\n npm i \n');
         });
     });
 }
